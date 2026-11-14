@@ -1,5 +1,4 @@
-# Inference Microservices
-
+# News Price Signal Engine
 A trading signal pipeline built from small services. It reads prices and news from Kafka and outputs a BUY, SELL or HOLD signal with a position size. Paper trading only.
 
 ## How it works
