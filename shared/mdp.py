@@ -1,10 +1,3 @@
-"""Trading as a Markov Decision Process (long-only, one symbol).
-
-State  : (p_bin, sentiment, in_position)   p_bin in 0..N_BINS-1, sentiment in {-1,0,1}
-Actions: HOLD=0, BUY=1, SELL=2   (BUY only when flat, SELL only when long)
-Reward : pos * ret - fee * |trade| - risk_aversion * (pos * ret)^2
-The learned policy only *proposes* an action; risk.decide() still enforces limits.
-"""
 from dataclasses import dataclass
 
 import numpy as np
